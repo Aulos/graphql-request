@@ -1,6 +1,6 @@
 {
-  "name": "graphql-request",
-  "version": "0.0.0-semantic-release",
+  "name": "graphql-request-no-deps",
+  "version": "0.0.1",
   "main": "dist/src/index.js",
   "typings": "./dist/src/index.d.ts",
   "files": [
@@ -36,8 +36,7 @@
     "test": "npm run lint && npm run build && ava --serial && npm run size",
     "size": "bundlesize"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/fetch-mock": "5.12.2",
     "@types/node": "8.5.5",
