@@ -1,4 +1,4 @@
-# graphql-request
+# graphql-request-no-deps
 
 [![CircleCI](https://circleci.com/gh/prisma/graphql-request.svg?style=shield)](https://circleci.com/gh/prisma/graphql-request) [![npm version](https://badge.fury.io/js/graphql-request.svg)](https://badge.fury.io/js/graphql-request)
 
@@ -13,7 +13,7 @@
 ## Install
 
 ```sh
-npm install graphql-request
+npm install graphql-request-no-deps
 ```
 
 ## Quickstart
@@ -21,7 +21,7 @@ npm install graphql-request
 Send a GraphQL query with a single line of code. ▶️ [Try it out](https://runkit.com/593130bdfad7120012472003/593130bdfad7120012472004).
 
 ```js
-import { request } from 'graphql-request'
+import { request } from 'graphql-request-no-deps'
 
 const query = `{
   Movie(title: "Inception") {
@@ -40,7 +40,7 @@ request('https://api.graph.cool/simple/v1/movies', query).then(data =>
 ## Usage
 
 ```js
-import { request, GraphQLClient } from 'graphql-request'
+import { request, GraphQLClient } from 'graphql-request-no-deps'
 
 // Run GraphQL queries/mutations using a static function
 request(endpoint, query, variables).then(data => console.log(data))
@@ -55,7 +55,7 @@ client.request(query, variables).then(data => console.log(data))
 ### Authentication via HTTP header
 
 ```js
-import { GraphQLClient } from 'graphql-request'
+import { GraphQLClient } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -89,7 +89,7 @@ main().catch(error => console.error(error))
 ### Passing more options to fetch
 
 ```js
-import { GraphQLClient } from 'graphql-request'
+import { GraphQLClient } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -122,7 +122,7 @@ main().catch(error => console.error(error))
 ### Using variables
 
 ```js
-import { request } from 'graphql-request'
+import { request } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -154,7 +154,7 @@ main().catch(error => console.error(error))
 ### Error handling
 
 ```js
-import { request } from 'graphql-request'
+import { request } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -187,7 +187,7 @@ main().catch(error => console.error(error))
 ### Using `require` instead of `import`
 
 ```js
-const { request } = require('graphql-request')
+const { request } = require('graphql-request-no-deps')
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -219,7 +219,7 @@ npm install fetch-cookie
 ```js
 require('fetch-cookie/node-fetch')(require('node-fetch'))
 
-import { GraphQLClient } from 'graphql-request'
+import { GraphQLClient } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -256,7 +256,7 @@ The `request` method will return the `data` or `errors` key from the response.
 If you need to access the `extensions` key you can use the `rawRequest` method:
 
 ```js
-import { rawRequest } from 'graphql-request'
+import { rawRequest } from 'graphql-request-no-deps'
 
 async function main() {
   const endpoint = 'https://api.graph.cool/simple/v1/cixos23120m0n0173veiiwrjr'
@@ -293,15 +293,15 @@ main().catch(error => console.error(error))
 
 ## FAQ
 
-### What's the difference between `graphql-request`, Apollo and Relay?
+### What's the difference between `graphql-request-no-deps`, Apollo and Relay?
 
-`graphql-request` is the most minimal and simplest to use GraphQL client. It's perfect for small scripts or simple apps.
+`graphql-request-no-deps` is the most minimal and simplest to use GraphQL client. It's perfect for small scripts or simple apps.
 
-Compared to GraphQL clients like Apollo or Relay, `graphql-request` doesn't have a built-in cache and has no integrations for frontend frameworks. The goal is to keep the package and API as minimal as possible.
+Compared to GraphQL clients like Apollo or Relay, `graphql-request-no-deps` doesn't have a built-in cache and has no integrations for frontend frameworks. The goal is to keep the package and API as minimal as possible.
 
 ### So what about Lokka?
 
-Lokka is great but it still requires [a lot of setup code](https://github.com/kadirahq/lokka-transport-http) to be able to send a simple GraphQL query. `graphql-request` does less work compared to Lokka but is a lot simpler to use.
+Lokka is great but it still requires [a lot of setup code](https://github.com/kadirahq/lokka-transport-http) to be able to send a simple GraphQL query. `graphql-request-no-deps` does less work compared to Lokka but is a lot simpler to use.
 
 ## Help & Community [![Slack Status](https://slack.prisma.io/badge.svg)](https://slack.prisma.io)
 
